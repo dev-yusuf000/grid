@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=display-width, initial-display=1.0">
+    <title>grid</title>
+    <!-- <link rel="stylesheets" href="grid.css"> -->
+    
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 8, 22);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+.a {
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+}
+.a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.b {
+    grid-column: 1;
+    grid-row: 2;
+}
+.c {
+    grid-column: 1;
+    grid-row: 3;
+}
+.c img {
+    width: 50%;
+    height: 50%;
+}
+.d {
+    grid-column: span 2;
+    grid-row: 1;
+    width: 600px;
+}
+.d p {
+    font-size: 14px;
+}
+.e {
+    grid-column: 2;
+    grid-row: span 2;
+}
+.e p {
+    font-size: 30px;
+    font-weight: bold;
+}
+.f {
+    grid-column: 3;
+    grid-row: 2;
+}
+.f img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">
+            <img src="img/1792777794104.jpg">
+        </div>
+
+        <div class="b">
+            <p>My days as a begginer are characterized by sleepless nights, early starts, and hard days. A journey of coding practical solutions to challenges facing humanity.</p>
+        </div>
+
+        <div class="c">
+            <img src="img/Event4.jpg">
+        </div>
+
+        <div class="d">
+            <p>An aspiring software engineer driven by a passion for technology, problem-solving, and creating innovative software solutions. I take initiative in expanding my programming expertise, strengthening my technical abilities, and developing applications that address real-world challenges. My goal is to grow into a highly capable software engineer who delivers meaningful results and contributes to impactful projects that create lasting value.</p>
+        </div>
+
+        <div class="e">
+            <p>Stepping up to CSS grid, being as tough as I can be, like everyone that has ever conquered it.</p>
+        </div>
+
+        <div class="f">
+            <img src="img/grid-code.png">
+        </div>
+    </div>
+</body>
